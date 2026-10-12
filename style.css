@@ -35,7 +35,7 @@ html, body{
     height: 6vw;
     width: 6vw;
     border-radius: 50%;
-    background-color: greenyellow;
+    background-color: rgb(68, 105, 12);
 }
 
 #page1 p{
@@ -57,7 +57,7 @@ nav{
 }
 
 nav h1 {
-    font-size: 1.6vw;
+    font-size: 1.8vw;
 }
 
 .menu{
@@ -73,13 +73,43 @@ nav h1 {
     
 }
 
-.nav-bottom{
+nav:hover #nav-bottom{
+    height:100%;
+    bottom:-100%;
+}
+
+#nav-bottom{
     position:absolute;
     height:0%;
     width: 79%;
-    bottom:10%;
+    bottom:0%;
     border-bottom: 1px solid #dadada;
+    transition: all ease 0.65s;
 }
+
+nav button{
+    background-color: rgb(68, 105, 12);
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 50px;
+    border: none;
+    font-size: 0.8vw;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+nav button svg{
+    height: 1vw;
+    width: 1vw;
+    margin-left: 1.6vw;
+
+
+}
+
+
+
 
 #herocategory {
     display: flex;
