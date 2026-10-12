@@ -1,8 +1,9 @@
 *{
+    @import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap');
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'gilroy';
+    font-family:"Bowlby One SC", sans-serif;
     color: azure;
 }
 
@@ -22,10 +23,11 @@ html, body{
 }
 
 #page1 h1{
-    font-size: 9vw;
+    font-size: 8vw;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 1000;
     line-height: 9vw;
+ 
     
 }
 
@@ -36,8 +38,70 @@ html, body{
     background-color: greenyellow;
 }
 
+#page1 p{
+    margin-top: 3vh;
+    font-size: 1.2vw;
+    text-align: center;
+    font-weight: 500;
+    font-family: sans-serif;
+    
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    align-items:center;
+    width: 100%;
+    padding: 2vw 12vw;
+    justify-content: space-between;
+}
+
+nav h1 {
+    font-size: 1.6vw;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.menu h4{
+    font-size: 0.8vw;
+    text-transform: uppercase;
+    font-weight: 600;    
+    
+}
+
+.nav-bottom{
+    position:absolute;
+    height:0%;
+    width: 79%;
+    bottom:10%;
+    border-bottom: 1px solid #dadada;
+}
+
+#herocategory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5vw;
+}
 
 
+#herocategory h4{
+    font-weight: 500;
+    font-size: 1.2vw;
+    text-transform: lowercase;
+    padding: 5px 12px;
+    border: 1px solid #b3b1b1;
+    border-radius: 50px;
+}
+
+#herocategory h4:nth-last-child(2){
+    border: none;
+
+}
 
 
 #page2{
