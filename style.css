@@ -1,5 +1,5 @@
 *{
-    @import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
     margin:0;
     padding: 0;
     box-sizing: border-box;
@@ -50,10 +50,11 @@ html, body{
 nav{
     display: flex;
     position: fixed;
-    align-items:center;
+    align-items:flex-start;
     width: 100%;
     padding: 2vw 12vw;
     justify-content: space-between;
+    height: 10vh;
 }
 
 nav h1 {
@@ -62,29 +63,48 @@ nav h1 {
 
 .menu{
     display: flex;
-    align-items: center;
     gap: 2vw;
+    align-items: flex-start;
+    padding: 1vh 0;
+    position: relative;
+    z-index: 10;
 }
 
 .menu h4{
     font-size: 0.8vw;
     text-transform: uppercase;
     font-weight: 600;    
+    margin-bottom: 1vw;
     
 }
 
-nav:hover #nav-bottom{
-    height:100%;
-    bottom:-100%;
+
+.menu h5{
+    color: #fff;
+    margin-bottom: 1vw;
+    /* background-color: red; */
+    display: none;
+    overflow: hidden;
+    
 }
 
-#nav-bottom{
-    position:absolute;
-    height:0%;
+.menu h5 span{
+    font-size: 0.7vw;
+    font-weight: 500;    
+    transform: translateY(25px);
+    display: inline-block;
+    
+}
+
+#nav-bottom {
     width: 79%;
-    bottom:0%;
-    border-bottom: 1px solid #dadada;
-    transition: all ease 0.65s;
+    height: 0vh;
+    position: absolute;
+    /* background-color: red; */
+    top: 100%;
+    background-color: #111;
+    z-index: 9;
+    border-bottom: 1px solid #fff;
 }
 
 nav button{
