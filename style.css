@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
     *{
-        @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
         margin:0;
         padding: 0;
         box-sizing: border-box;
-        font-family:"Bowlby One SC", sans-serif;
+        font-family:Bgilroy, sans-serif;
         color: azure;
     }
 
@@ -55,6 +55,8 @@
         padding: 2vw 12vw;
         justify-content: space-between;
         height: 10vh;
+        background-color: #111;
+        z-index: 10;
     }
 
     nav h1 {
@@ -154,20 +156,63 @@
     }
 
 
-    /* Moving Logo strip */
+/* Moving logo strip */
+#moving-div {
+    width: 48%;
+    position: absolute;
+    margin-top: 10vh;
+    bottom: 3%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #111;
+    padding: 1.2vw;
+}
 
-    #moving-div{
-        background-color: aqua;
-        position: absolute;
-        margin-top: 10vh;
-        bottom:3%;
-        white-space: nowrap;
-        padding:1.2vw;
-        width:44%;
-        overflow: hidden;   
+/* Each group of logos */
+#moving-div .move {
+    display: inline-block;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    animation: moveLogos 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* Logo images */
+#moving-div .move img {
+    height: 4vw;
+    margin: 0 1.2vw;
+    filter: brightness(0) invert(1);
+}
+
+@keyframes moveLogos {
+    from {
+        transform: translateX(0);
     }
 
+    to {
+        transform: translateX(-100%);
+    }
+}
 
+#left-blur{
+    background: linear-gradient(to right, #111, transparent);
+    position: absolute;
+    height: 100%;
+    width:20%;
+    left:0;
+    top:0;
+    z-index: 5;
+}
+#right-blur{
+    background: linear-gradient(to right, transparent, #111);
+    position: absolute;
+    height: 100%;
+    width:20%;
+    right:0;
+    top:0;
+    z-index: 5;
+}
 
     #page2{
         height: 100vh;
