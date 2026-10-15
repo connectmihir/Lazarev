@@ -232,7 +232,7 @@ nav button svg {
     background-color: #111;
 }
 
-#sec2left {
+#sec2right {
     height: 100vh;
     width: 40%;
     bottom: 0;
@@ -242,8 +242,13 @@ nav button svg {
 }
 
 #sec2left {
-    height: 100vh;
     width: 40%;
-    background-color: #7f7d7d;
+    bottom: 0;
+    height: 100vh;
+    background-color: #bdb9b9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
 
 }
