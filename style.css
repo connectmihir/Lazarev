@@ -22,6 +22,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 #page1 h1 {
@@ -220,35 +221,81 @@ nav button svg {
     z-index: 5;
 }
 
+
+/*                Section-2                  */
+
 #page2 {
     position: relative;
     height: 100vh;
     width: 100%;
-    padding: 0vw 11.5vw;
+    padding: 2vw 12vw;
+    padding-bottom: 8vw;
     display: flex;
     align-items: center;
-    border-top: 1px solid #333;
+    border-top: 1px solid #c3c3c3;
     justify-content: space-between;
-    background-color: #111;
-}
-
-#sec2right {
-    height: 100vh;
-    width: 40%;
-    bottom: 0;
-    top: 0;
-    background-color: #7f7d7d;
+    background-color: #111;  
 
 }
+/*       Section-2 --------->  Left */
+
+
 
 #sec2left {
-    width: 40%;
+    
+    width: 45%;
     bottom: 0;
-    height: 100vh;
-    background-color: #bdb9b9;
+    height: 100%;
+    /* background-color: #bdb9b9; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 3vw 0;
 
+}
+
+#sec2left p{
+    font-weight: 500;
+    font-size: 1vw;
+}
+
+#sec2left h5{
+    font-weight: 500;
+    width: 76%;
+    font-size: 1.2vw;
+}
+
+
+/*       Section-2 --------->  Right */
+
+
+#sec2right {
+    height: 100%;
+    width: 55%;
+    /* background-color: red; */
+    
+}
+
+
+.right-elem {
+    position: relative;
+    padding-top: 2vw;
+    padding-bottom: 5.5vw;
+    border-bottom: 1px solid #333;
+}
+
+.right-elem h2 {
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+
+.right-elem img {
+    height:6.5vw;
+    width: 6.5vw;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    scale: 0;
 }
