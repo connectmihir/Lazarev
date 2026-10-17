@@ -234,15 +234,16 @@ nav button svg {
     align-items: center;
     border-top: 1px solid #c3c3c3;
     justify-content: space-between;
-    background-color: #111;  
+    background-color: #111;
 
 }
+
 /*       Section-2 --------->  Left */
 
 
 
 #sec2left {
-    
+
     width: 45%;
     bottom: 0;
     height: 100%;
@@ -255,12 +256,12 @@ nav button svg {
 
 }
 
-#sec2left p{
+#sec2left p {
     font-weight: 500;
     font-size: 1vw;
 }
 
-#sec2left h5{
+#sec2left h5 {
     font-weight: 500;
     width: 76%;
     font-size: 1.2vw;
@@ -274,7 +275,7 @@ nav button svg {
     height: 100%;
     width: 55%;
     /* background-color: red; */
-    
+
 }
 
 
@@ -291,7 +292,7 @@ nav button svg {
 }
 
 .right-elem img {
-    height:6.5vw;
+    height: 6.5vw;
     width: 6.5vw;
     border-radius: 50%;
     object-fit: cover;
@@ -303,7 +304,7 @@ nav button svg {
 
 /*              Section-3                 */
 
-#section-3{
+#section-3 {
     position: relative;
     height: 100vh;
     width: 100%;
@@ -320,13 +321,13 @@ nav button svg {
 
 
 
-.sec3center{
+.sec3center {
     padding: 1vw;
     /* background-color: aqua;   */
     display: flex;
     align-items: center;
     flex-direction: column;
-      /* position: relative; */
+    /* position: relative; */
     z-index: 3;
     cursor: pointer;
 }
@@ -334,8 +335,8 @@ nav button svg {
 
 
 
-.sec3center h3{
-        font-size: 0.8vw;
+.sec3center h3 {
+    font-size: 0.8vw;
     background-color: #fff;
     color: #000;
     border-radius: 50px;
@@ -358,9 +359,9 @@ nav button svg {
 
 
 
-.sec3center .icon{
+.sec3center .icon {
     display: flex;
-    align-items: center;    
+    align-items: center;
     justify-content: center;
     padding: 3vw;
     border-radius: 50%;
@@ -371,7 +372,7 @@ nav button svg {
 
 
 
-.sec3center .icon i{
+.sec3center .icon i {
     color: #111;
     font-size: 2vw;
 
@@ -393,5 +394,60 @@ nav button svg {
 
 }
 
+#sec4 {
+    height: 100vh;
+    width: 100%;
+    padding: 6vw 12vw 8vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* gap: 4vw; */
+    overflow: hidden;
+    
+}
+
+#sec4left {
+    height: 100%;
+    flex: 1;
+    text-transform: capitalize;
+    overflow: hidden;
+    
+}
+#sec4left h2{
+    /* width: 56%; */
+    color: #000;
+    font-size: 3vw;
+    
+}
+
+#sec4right {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+#sec4right h2 {
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 800;
+    opacity: 59%;
+    color: #000;
+
+    
+}
 
 
+#sec4right h3 {
+    margin-top: 1.2vw;
+    font-size: 1.6vw;
+    font-weight: 400;
+    color: #000;
+
+    
+
+}
