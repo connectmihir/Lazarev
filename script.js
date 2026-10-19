@@ -147,6 +147,25 @@ function section3video() {
 }
 
 
+
+var sec5= document.querySelectorAll(".content-right")
+
+sec5.forEach(function(elem){
+    elem.addEventListener("mouseenter", function(){
+        elem.childNodes[3].style.opacity=1
+        elem.childNodes[3].play()
+        elem.childNodes[1].style.opacity=0
+    })
+
+
+    elem.addEventListener("mouseleave", function(){
+        elem.childNodes[3].style.opacity=0
+        elem.childNodes[3].load()
+        elem.childNodes[1].style.opacity=1
+    })
+})
+
+
 headerAnimation()
 
 section2Animation()

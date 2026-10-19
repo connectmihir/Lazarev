@@ -395,7 +395,7 @@ nav button svg {
 }
 
 #sec4 {
-    height: 100vh;
+    height: 96vh;
     width: 100%;
     padding: 6vw 12vw 8vw;
     /* padding-bottom: 20vw; */
@@ -405,7 +405,7 @@ nav button svg {
     align-items: flex-start;
     justify-content: space-between;
     /* gap: 4vw; */
-    overflow: hidden;
+    /* overflow: hidden; */
     
 } /* padding-bottom: 20vw; */
     /* background-color: #111; */
@@ -468,24 +468,26 @@ nav button svg {
     position: relative;
     /* background-color: #000; */
     padding: 6vw 12vw;
-    
-    
-    
+    padding-bottom: 13vh;
+
 }
 
-.content-1{
+.content{
     height:70vh;
     width:100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* padding-bottom: 0; */
+    padding-bottom: 13vh;
+
     
     
 }
 
-.content-1-left{
+.content-left{
     height:100%;
-    width:28%;
+    width:30%;
     display: flex;
     flex-direction: column;
     /* background-color: antiquewhite; */
@@ -493,7 +495,7 @@ nav button svg {
     border-radius: 1px;
 }
 
-.content-1-left h2{
+.content-left h2{
     font-size: 3vw;
     font-weight: 600;
     color: #111;
@@ -501,33 +503,44 @@ nav button svg {
 }
 
 
-.content-1-left p{
+.content-left p{
     font-size: 1.2vw;
     font-weight: 500;
     padding-top: 3vw;
     color: #111;
+    padding-right: 2vw;
 
 }
 
 
-.content-1-right{
+.content-right{
+    margin-top: 2vw;
     height:100%;
     width:70%;
     display: flex;
     /* background-color: #b3b1b1; */
     position: relative;
     align-items: flex-start;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding-left: 2vw;
-    padding-top: 0;
+    /* padding-top: 0; */
 }
-.content-1-right video {
-height:84%;
-width:fit-content;
+.content-right img {
+height:100%;
+width:100%;
+object-fit: cover;
+/* position: absolute; */
+opacity: 1;
+}
+
+
+.content-right video {
+height:100%;
+width:100%;
+left:0;
+top: 0;
+object-fit: cover;
 position: absolute;
-object-fit: contain;
-
-
-
-
+opacity: 0;
+transition: opacity ease 0.1s;
 }
