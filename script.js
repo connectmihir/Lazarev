@@ -166,6 +166,29 @@ sec5.forEach(function(elem){
 })
 
 
+
+var sec6= document.querySelectorAll("#container-elem")
+
+
+sec6.forEach(function(elem){
+
+    elem.addEventListener("mouseenter", function(){
+
+        elem.style.backgroundColor = "#655f5f8a";
+        elem.childNodes[1].style.paddingLeft = "20px";
+        elem.children[5].style.paddingRight = "1vw";
+
+    })
+    elem.addEventListener("mouseleave", function(){
+
+        elem.style.backgroundColor = "#000";
+        elem.childNodes[1].style.paddingLeft = "0";
+        elem.children[5].style.paddingRight = "0";
+
+    })
+   
+})
+
 headerAnimation()
 
 section2Animation()
