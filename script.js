@@ -142,10 +142,6 @@ function headerAnimation() {
 
 }
 
-
-
-
-
 // Animation logic for section 2
 
 function section2Animation() {
@@ -155,7 +151,7 @@ function section2Animation() {
     rightElems.forEach(function (elem) {
         elem.addEventListener("mouseenter", function () {
 
-            gsap.to(elem.children[3], {
+            gsap.to(elem.childNodes[3], {
                 opacity: 1,
                 scale: 1
             })
@@ -163,7 +159,7 @@ function section2Animation() {
 
 
         elem.addEventListener("mouseleave", function () {
-            gsap.to(elem.children[3], {
+            gsap.to(elem.childNodes[3], {
                 opacity: 0,
                 scale: 0
             })
@@ -171,7 +167,7 @@ function section2Animation() {
 
         elem.addEventListener("mousemove", function (dets) {
 
-            gsap.to(elem.children[3], {
+            gsap.to(elem.childNodes[3], {
 
                 x: dets.x - elem.getBoundingClientRect().x - 50,
                 y: dets.y - elem.getBoundingClientRect().y - 120,
