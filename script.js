@@ -223,6 +223,23 @@ sec5.forEach(function(elem){
 // })
 
 
+
+function page6Animations() {
+    gsap.from("#btm7-part2 h4", {
+        x: 0,
+        duration: 1,
+        scrollTrigger: {
+            trigger: "#btm7-part2",
+            scroller: "#main",
+            // markers:true,
+            start: "top 80%",
+            end: "top 10%",
+            scrub: true
+        }
+    })
+}
+
+
 AnimationLoco()
 
 headerAnimation()
@@ -230,3 +247,5 @@ headerAnimation()
 section2Animation()
 
 section3video()
+
+page6Animations()
